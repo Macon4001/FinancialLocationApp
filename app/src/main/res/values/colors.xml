@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="my_primarycolor">#E22A41</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textColor">#2B2B2B</color>
+    <color name="light">#ebf0ff</color>
+    <color name="blue">#009688</color>
+    <color name="ripple_white">#26FFFFFF</color>
+    <color name="errorColor">#2196F3</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#056FC3</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#005EA8</color>
+    <color name="backgroundPrimary">#FFFFFF</color>
+    <color name="backgroundBlack">#212121</color>
+    <color name="primary_text_material_light">#de000000</color>
+    <color name="divider_color">#9e9e9e</color>
+    <color name="primary_text_expense">#2196F3</color>
+    <color name="primary_text_income">#4CAF50</color>
+    <color name="gauge_gray">#ababab</color>
+    <color name="gauge_income">#ADD4F3</color>
+    <color name="gauge_expense">#2196F3</color>
+    <color name="gauge_white">#FFFFFF</color>
+    <color name="iconGrey">#7E7E7E</color>
+    <color name="secondary_text_material_light">#8a000000</color>
+    <color name="help_text_material_light">#9b9b9b</color>
+    <color name="help_tex2t_material_light">#4CAF50</color>
+
+    <color name="hint_foreground_material_light">#00000000</color>
+    <color name="hint_foreground_material_dark">#00000000</color>
+    <color name="lightGrey">#F2F9F6</color>
+    <color name="grey">#E0E0E0</color>
+
+    <color name="gre33y">#AC65FF</color>
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundBlack"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="50">
+        <LinearLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.67" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Balance:"
+                android:textColor="#eceff1"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/total_balance_textview"
+                app:layout_constraintEnd_toStartOf="@+id/gauge"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toEndOf="@+id/gauge" />
+
+            <TextView
+                android:id="@+id/total_balance_textview"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100.00 USD"
+                android:textColor="#eceff1"
+                android:textSize="32dp"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/gauge"
+                app:layout_constraintEnd_toStartOf="@+id/gauge"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/gauge"
+                app:layout_constraintTop_toBottomOf="@+id/gauge" />
+
+            <TextView
+                android:id="@+id/left_balance_textview"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Time"
+                android:textColor="#eceff1"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+
+                app:layout_constraintEnd_toStartOf="@+id/gauge"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toEndOf="@+id/gauge"
+                app:layout_constraintTop_toBottomOf="@+id/total_balance_textview" />
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.financiallocationapp.lib.CircleGauge
+                    android:id="@+id/gauge"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:gaugeEndValue="100"
+                    app:gaugePointEndColor="@color/gauge_income"
+                    app:gaugePointStartColor="@color/gauge_income"
+                    app:gaugeStartAngle="90"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="BUTT"
+                    app:gaugeStrokeColor="@color/gauge_expense"
+                    app:gaugeStrokeWidth="16dp"
+                    app:gaugeSweepAngle="360"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </com.app.financiallocationapp.lib.CircleGauge>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/gauge_right_balance_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1250 USD"
+                        android:textColor="#eceff1"
+                        android:textSize="12dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/gauge"
+                        app:layout_constraintEnd_toEndOf="@+id/gauge"
+                        app:layout_constraintHorizontal_bias="0.95"
+                        app:layout_constraintStart_toStartOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/gauge"
+                        app:layout_constraintVertical_bias="0.9" />
+
+                    <TextView
+                        android:id="@+id/gauge_right_line1_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="28-Feb"
+                        android:textColor="#eceff1"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toEndOf="@+id/gauge"
+                        app:layout_constraintHorizontal_bias="0.076"
+                        app:layout_constraintStart_toStartOf="@+id/guideline2"
+                        app:layout_constraintTop_toBottomOf="@+id/gauge_right_balance_text_view" />
+
+                    <TextView
+                        android:id="@+id/gauge_right_line2_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Expenses"
+                        android:textColor="#eceff1"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toEndOf="@+id/gauge"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline2"
+                        app:layout_constraintTop_toBottomOf="@+id/gauge_right_line1_textview" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/gauge_left_balance_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0 USD"
+                        android:textColor="#eceff1"
+                        android:textSize="12dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/gauge"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="@+id/gauge"
+                        app:layout_constraintTop_toTopOf="@+id/gauge"
+                        app:layout_constraintVertical_bias="0.9" />
+
+                    <TextView
+                        android:id="@+id/gauge_left_line1_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="01-Feb"
+                        android:textColor="#eceff1"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        app:layout_constraintHorizontal_bias="0.076"
+                        app:layout_constraintStart_toStartOf="@+id/gauge_left_balance_text_view"
+                        app:layout_constraintTop_toBottomOf="@+id/gauge_left_balance_text_view" />
+
+                    <TextView
+                        android:id="@+id/gauge_left_line2_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Income"
+                        android:textColor="#eceff1"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/gauge_left_balance_text_view"
+                        app:layout_constraintTop_toBottomOf="@+id/gauge_left_line1_textview" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_weight="50"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/item_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Expenses"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/favourite_categories_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

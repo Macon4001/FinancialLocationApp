@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "960029705675",
+    "firebase_url": "https://financial-planning-app-42381-default-rtdb.firebaseio.com",
+    "project_id": "financial-planning-app-42381",
+    "storage_bucket": "financial-planning-app-42381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960029705675:android:eb82490ca4fe1f4fd1a24e",
+        "android_client_info": {
+          "package_name": "com.app.financiallocationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960029705675-mqgkb70m2h7066afqmtthrlm7uhqppkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcRToiHkb13Xum-zvnK_7XEORJzMaDVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960029705675-mqgkb70m2h7066afqmtthrlm7uhqppkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
